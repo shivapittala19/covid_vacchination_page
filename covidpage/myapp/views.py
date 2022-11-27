@@ -30,7 +30,7 @@ def register(request):
         else:
             print('passwor is not matching')
             return redirect('register')
-        return redirect('login_user') 
+        return render(request,'login.html') 
     else:
         return render(request,'register.html')
 def login_user(request):
